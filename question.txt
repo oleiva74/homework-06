@@ -1,0 +1,56 @@
+hpiller14@lesson-6:~/homework-06$ git log
+commit 95f9f552714fc2dd37c5d2d87460e81c1bc05f7b (HEAD -> main)
+Merge: 721bbb9 c18b759
+Author: Oleg Ivanov <oleiva74@icloud.com>
+Date:   Tue Mar 2 14:09:20 2021 +0000
+
+    Merge branch 'branch-1' into main
+
+commit c18b75982107dead9667dc1308b8a7b71f415756 (branch-1)
+Merge: 65bc8ab 3f56b7d
+Author: Oleg Ivanov <oleiva74@icloud.com>
+Date:   Tue Mar 2 14:07:21 2021 +0000
+
+    Merge branch 'branch-2' into branch-1
+
+commit 65bc8ab3fc78db217564da608a14d5a52ea8c334
+Author: Oleg Ivanov <oleiva74@icloud.com>
+Date:   Tue Mar 2 13:04:33 2021 +0000
+
+    homework-06 point 5 on branch-1
+
+commit 3f56b7de848d39eeb72efb398b66b23bf07735ce (branch-2)
+Author: Oleg Ivanov <oleiva74@icloud.com>
+Date:   Tue Mar 2 13:03:59 2021 +0000
+
+    homework-06 point 5 on branch-2
+
+commit 3297cb0d0b0b8b8d1f338c3dff1ecd58772ccc4c
+Author: Oleg Ivanov <oleiva74@icloud.com>
+Date:   Tue Mar 2 12:55:43 2021 +0000
+
+    added file04.txt and file05.txt to branch-2 by mistake
+    
+    This reverts commit 6174cf85f3ccf7305ef356b079565af44ae0d4a8.
+
+commit 6174cf85f3ccf7305ef356b079565af44ae0d4a8
+Author: Oleg Ivanov <oleiva74@icloud.com>
+Date:   Tue Mar 2 12:53:04 2021 +0000
+
+    homework-06 point 5 on branch-2
+
+commit 721bbb95e00ce0600a338b74865c239c87826d99
+Author: Oleg Ivanov <oleiva74@icloud.com>
+Date:   Tue Mar 2 12:44:08 2021 +0000
+
+    homework-06 point 2
+
+commit 8cad3d4f7bd67d338af7cda400327164fcbe202b (origin/main, origin/HEAD)
+Author: oleiva74 <75116398+oleiva74@users.noreply.github.com>
+Date:   Tue Mar 2 15:35:33 2021 +0300
+
+    Initial commit
+shpiller14@lesson-6:~/homework-06$ git revert HEAD --no-edit
+error: commit 95f9f552714fc2dd37c5d2d87460e81c1bc05f7b is a merge but no -m option was given.
+fatal: revert failed
+
